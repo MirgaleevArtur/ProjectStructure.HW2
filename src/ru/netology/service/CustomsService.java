@@ -5,6 +5,6 @@ public class CustomsService {
     static final int CUSTOM_DUTY = 100;
 
     public static int calculateCustoms(int price, int weight){
-        return (int)(price * 0.01 + weight * CUSTOM_DUTY);
+        return (price / 100 + weight * CUSTOM_DUTY);
     }
 }
